@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('SFProText-Regular.woff2') format('woff2'),
+        url('SFProText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Kai';
+    src: url('BebasKai.woff2') format('woff2'),
+        url('BebasKai.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
