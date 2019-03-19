@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="../css/admin.css"/>
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
   </head>
-  <body>
+  <body class="admin">
     <header class="main-header">
       <div class="container"><img src="../img/logo.svg" alt="logo"/>
-        <button class="btn btn-close btn-danger" type="button"><span class="icon-sign-out">Cerrar Session</span></button>
+        <button class="btn btn-close btn-danger" type="button" id="close-session"><span class="icon-sign-out">Cerrar Session</span></button>
       </div>
     </header>
     <main class="main">
@@ -24,91 +24,19 @@
         </div>
         <div class="table-container">
           <table class="promos" id="promos">
-            <thead>
-              <th>Mes</th>
+            <thead>             
               <th>Area</th>
               <th>Promocion</th>
-              <th>Activada</th>
-              <th>Editar</th>
               <th>Borrar</th>
             </thead>
-            <tbody>
-              <tr>
-                <td>Marzo</td>
-                <td>Tienda</td>
-                <td>10% de descuento</td>
-                <td><span class="icon-check"></span></td>
-                <td>
-                  <button class="btn btn-primary btn-circle icon-edit"></button>
-                </td>
-                <td>
-                  <button class="btn btn-danger btn-circle icon-delete"></button>
-                </td>
-              </tr>
-              <tr>
-                <td>Marzo</td>
-                <td>Tienda</td>
-                <td>10% de descuento</td>
-                <td><span class="icon-check"></span></td>
-                <td>
-                  <button class="btn btn-primary btn-circle icon-edit"></button>
-                </td>
-                <td>
-                  <button class="btn btn-danger btn-circle icon-delete"></button>
-                </td>
-              </tr>
-            </tbody>
+            <tbody id="tbody"></tbody>
           </table>
         </div>
       </div>
     </main>
-    <aside class="modal" id="modal">
-      <div class="modal__close icon-times"></div>
-      <div class="modal__container">
-        <form id="formAddNew">
-          <div class="input-group">
-            <label class="label-lh" for="month">Selecione el mes de publicacion: </label>
-            <select id="month" name="month" required="required">
-              <option value="enero">enero</option>
-              <option value="febrero">febrero</option>
-              <option value="marzo">marzo</option>
-              <option value="abril">abril</option>
-              <option value="mayo">mayo</option>
-              <option value="junio">junio</option>
-              <option value="julio">julio</option>
-              <option value="agosto">agosto</option>
-              <option value="septiembre">septiembre</option>
-              <option value="octubre">octubre</option>
-              <option value="noviembe">noviembe</option>
-              <option value="diciembre">diciembre</option>
-            </select>
-          </div>
-          <div class="input-group">
-            <label class="label-lh" for="area">Área de la promoción: </label>
-            <select id="area" name="area" required="required">
-              <option value="Tienda">Tienda</option>
-              <option value="hospital">Hospital</option>
-            </select>
-          </div>
-          <div class="input-group">
-            <label for="promo">Promoción del mes: </label>
-            <textarea id="promo" name="promo" required="required"></textarea>
-          </div>
-          <div class="input-group">
-            <label class="label-lh" for="area">Promoción Actva: </label>
-            <select id="area" name="active" required="required">
-              <option value="1">Activa</option>
-              <option value="0">Desactivada</option>
-            </select>
-          </div>
-          <input type="hidden" name="promoId" id="promoId"/>
-          <footer class="footer-form">
-            <button class="btn btn-cancel" type="reset">Cancelar</button>
-            <button class="btn btn-save" type="submit">Guardar</button>
-          </footer>
-        </form>
-      </div>
-    </aside>
+    <div class="modal modal-loading show" id="loading">
+      <div class="loading-container"><img src="../img/Ripple-1s-200px.svg" alt=""/></div>
+    </div>
     <script src="../js/admin-min.js"></script>
   </body>
 </html>

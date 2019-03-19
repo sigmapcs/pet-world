@@ -1680,12 +1680,11 @@ var drawPromos = function drawPromos(data, eleStore, eleHospital) {
   var fragmentTienda = document.createDocumentFragment();
   var fragmentHospital = document.createDocumentFragment();
   data.forEach(function (n) {
-    console.log(n);
     var container = document.createElement('ul');
     var promLi = document.createElement('li');
     promLi.textContent = n.promo;
     container.appendChild(promLi);
-    n.area === "tienda" ? fragmentTienda.appendChild(container) : fragmentHospital.appendChild(container);
+    n.area === "Tienda" ? fragmentTienda.appendChild(container) : fragmentHospital.appendChild(container);
   });
   eleStore.appendChild(fragmentTienda);
   eleHospital.appendChild(fragmentHospital);
