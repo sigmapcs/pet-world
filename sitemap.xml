@@ -2,30 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://example.com/contacto.html</loc>
-        <lastmod>2019-03-12T02:57:34.871Z</lastmod>
+        <lastmod>2019-03-19T20:56:09.850Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/hospital.html</loc>
-        <lastmod>2019-03-12T02:57:35.354Z</lastmod>
+        <lastmod>2019-03-19T20:56:10.063Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/</loc>
-        <lastmod>2019-03-12T02:57:35.531Z</lastmod>
+        <lastmod>2019-03-19T20:56:10.529Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/promociones.html</loc>
-        <lastmod>2019-03-12T02:57:35.764Z</lastmod>
+        <lastmod>2019-03-19T20:56:10.966Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/tienda-estetica.html</loc>
-        <lastmod>2019-03-12T02:57:35.789Z</lastmod>
+        <lastmod>2019-03-19T20:56:11.262Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/ubicacion.html</loc>
-        <lastmod>2019-03-12T02:57:03.424Z</lastmod>
+        <lastmod>2019-03-12T03:11:54.124Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/admin/</loc>
+        <lastmod>2019-03-19T20:56:11.285Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/admin/login.html</loc>
+        <lastmod>2019-03-19T20:56:11.364Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/assets/fonts/demo.html</loc>
-        <lastmod>2019-03-12T02:57:36.654Z</lastmod>
+        <lastmod>2019-03-19T14:40:32.797Z</lastmod>
     </url>
 </urlset>
