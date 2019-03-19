@@ -1613,7 +1613,7 @@ firebase.auth().onAuthStateChanged(function (user) {
       (0, _promos.getPromos)(d.getElementById('tbody'));
     }
   } else {
-    if (location.pathname !== "/admin/login.html") {
+    if (location.pathname !== "pet-world/admin/login.html") {
       location.href = 'login.html';
     }
     console.log("no tengo usuario autenticado");
